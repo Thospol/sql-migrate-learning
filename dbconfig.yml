@@ -1,0 +1,11 @@
+development:
+    dialect: mysql
+    datasource: root:P@ssw0rd@tcp(127.0.0.1:3306)/learning?charset=utf8mb4&parseTime=True
+    dir: migrations
+    table: migrations
+
+production:
+    dialect: mysql
+    datasource: ${MYSQL_USER}:${MYSQL_PASSWORD}@tcp(${MYSQL_HOST}:${MYSQL_PORT})/${DATABASE_NAME}?charset=utf8mb4&parseTime=True
+    dir: migrations
+    table: migrations

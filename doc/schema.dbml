@@ -1,0 +1,19 @@
+Project HRIS {
+  database_type: 'MySQL'
+  Note: '''
+    # LEARNING Database
+    **LEARNING MYSELF UP SKILL...**
+  '''
+}
+
+Table blogs {
+  id bigint [pk, increment, not null, note: 'ไอดี']
+  created_at datetime [not null,  note: 'วันเวลาที่สร้าง']
+  updated_at datetime [not null,  note: 'วันเวลาที่อัพเดตล่าสุด']
+  deleted_at datetime [note: 'วันเวลาที่ลบ']
+  title varchar(255) [not null,  note: 'หัวข้อ']
+  message text [not null, note: 'ข้อความ']
+  author_name varchar(255) [not null,  note: 'ชื่อผู้แต่ง']
+  author_email varchar(255) [not null,  note: 'อีเมลผู้แต่ง']
+  note: 'ตารางบล็อก'
+}
